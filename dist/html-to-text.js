@@ -546,15 +546,8 @@ var removeIndentation = function removeIndentation(html) {
   return html.replace(/(^\t+)/gm, '');
 };
 
-var htmlToText = (0, _utils.compose)( // removeIndentation,
-// convertTagsToBreak,
-// removeAllNonTagsToBreakOn,
-// //removeExtraBreakLines,
-// removeLeadingNewLines,
-// removeTrailingNewLines,
-// removeBlocks,
-// breakOnBlocks,
-parseImages, parseListItems, parseLinks, replaceSpaces, removeTextStyling, removeSilentElements, removeUnparsableElements, preprocess);
+var htmlToText = (0, _utils.compose)(removeIndentation, convertTagsToBreak, removeAllNonTagsToBreakOn, //removeExtraBreakLines,
+removeLeadingNewLines, removeTrailingNewLines, removeBlocks, breakOnBlocks, parseImages, parseListItems, parseLinks, replaceSpaces, removeTextStyling, removeSilentElements, removeUnparsableElements, preprocess);
 var _default = htmlToText;
 exports.default = _default;
 },{"striptags":"G6CD","./utils":"FOZT"}]},{},["Focm"], "HTMLToText")

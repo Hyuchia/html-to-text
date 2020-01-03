@@ -1,6 +1,6 @@
 {
   "name": "@blac-sheep/html-to-text",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple utility to convert HTML into text, keeping as much content as possible.",
   "repository": {
     "type": "git",
