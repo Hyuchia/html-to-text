@@ -125,17 +125,17 @@ const convertTagsToBreak = html => striptags(html, [], '\n');
 const removeIndentation = html => html.replace(/(^\t+)/gm, '');
 
 const htmlToText = compose(
-  removeIndentation,
+  // removeIndentation,
 
-  convertTagsToBreak,
-  removeAllNonTagsToBreakOn,
+  // convertTagsToBreak,
+  // removeAllNonTagsToBreakOn,
 
-  //removeExtraBreakLines,
-  removeLeadingNewLines,
-  removeTrailingNewLines,
+  // //removeExtraBreakLines,
+  // removeLeadingNewLines,
+  // removeTrailingNewLines,
 
-  removeBlocks,
-  breakOnBlocks,
+  // removeBlocks,
+  // breakOnBlocks,
 
   parseImages,
   parseListItems,
