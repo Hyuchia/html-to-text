@@ -1,5 +1,6 @@
 import striptags from 'striptags';
 import { compose } from './utils';
+import entities from './entities';
 
 const blocks = [
   'p',
@@ -113,7 +114,24 @@ const parseListItems = html => {
   return html.replace(/<li(.*?)>(.*?)<\/li>/gm, '');
 };
 
-const replaceSpaces = html => html.replace(/&nbsp;/gm, ' ');
+const replaceEntities = html => {
+  for (const entity in entities) {
+    html = html.replace(new RegExp(`${entity}`, 'gm'), entities[entity]);
+  }
+  return html;
+};
+
+const replaceSensitiveCharacters = html => {
+  html = html.replace(/&gt;/gm, '>');
+  html = html.replace(/&GT;/gm, '>');
+
+  html = html.replace(/&lt;/gm, '<');
+  html = html.replace(/&LT;/gm, '<');
+
+  html = html.replace(/﻿/gm, '');
+
+  return html;
+};
 
 const removeLeadingNewLines = html => html.replace(/\n+$/, '');
 
@@ -126,6 +144,7 @@ const removeIndentation = html => html.replace(/(^\t+)/gm, '');
 
 const htmlToText = compose(
   removeIndentation,
+  replaceSensitiveCharacters,
 
   convertTagsToBreak,
   removeAllNonTagsToBreakOn,
@@ -141,7 +160,7 @@ const htmlToText = compose(
   parseListItems,
   parseLinks,
 
-  replaceSpaces,
+  replaceEntities,
   removeTextStyling,
   removeSilentElements,
   removeUnparsableElements,
