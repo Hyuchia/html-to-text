@@ -388,8 +388,8 @@ var _default = {
   "&Tab;": "\t",
   "&NewLine;": "\n",
   "&excl;": "!",
-  "&quot;": "\"",
-  "&QUOT;": "\"",
+  //"&quot;": "\"",
+  //"&QUOT;": "\"",
   "&num;": "#",
   "&dollar;": "$",
   "&percnt;": "%",
@@ -2436,6 +2436,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var blocks = ['p', 'div', 'br', 'hr', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ol', 'ul', 'li', 'pre', 'table', 'th', 'td', 'blockquote', 'header', 'footer', 'nav', 'section', 'summary', 'aside', 'article', 'address', 'code', 'img'];
 var unparsable = ['audio', 'iframe', 'map', 'progress', 'track', 'meter', 'object', 'svg', 'wbr', 'video', 'webview', 'dialog', 'canvas'];
+var silent = ['ol', 'ul', 'span'];
 
 var preprocess = function preprocess(html) {
   return html;
@@ -2477,35 +2478,14 @@ var removeUnparsableElements = function removeUnparsableElements(html) {
 
 
 var removeSilentElements = function removeSilentElements(html) {
-  return html.replace(/<(\/)?(ul|ol|span)+(.*?)>/g, '');
-};
-
-var parseLinks = function parseLinks(html) {
-  // First parse all links that have some text
-  html = html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.+?)<\/a>/g, '$4 ($2)'); // Remove all those that doesn't
-
-  return html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.*?)<\/a>/g, '');
-};
-
-var parseImages = function parseImages(html) {
-  // Parse images where the alt property is before the src one
-  html = html.replace(/<img(.+?)alt="(.+?)"(.+?)src="(.+?)"(.*?)>/gm, 'Image: $2 ($4)'); // Parse images where the alt property is after the src one
-
-  html = html.replace(/<img(.+?)src="(.+?)"(.+?)alt="(.+?)"(.*?)>/gm, 'Image: $4 ($2)'); // Parse images where no alt property was provided
-
-  html = html.replace(/<img(.+?)src="(.+?)"(.*?)>/gm, 'Image: $2');
-  return html;
-};
-
-var breakOnBlocks = function breakOnBlocks(html) {
   var _iteratorNormalCompletion2 = true;
   var _didIteratorError2 = false;
   var _iteratorError2 = undefined;
 
   try {
-    for (var _iterator2 = blocks[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var block = _step2.value;
-      html = html.replace(new RegExp("</".concat(block, ">"), 'gm'), "</".concat(block, ">\n"));
+    for (var _iterator2 = silent[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var element = _step2.value;
+      html = html.replace(new RegExp("<".concat(element, "(.*?)>(.*?)</").concat(element, ">")), '$2');
     }
   } catch (err) {
     _didIteratorError2 = true;
@@ -2522,14 +2502,28 @@ var breakOnBlocks = function breakOnBlocks(html) {
     }
   }
 
+  html = html.replace(/<(\/)?(ul|ol|span)+(.*?)>/g, '');
   return html;
 };
 
-var removeExtraBreakLines = function removeExtraBreakLines(html) {
-  return html.replace(/(\n\n)+/gm, '\n');
+var parseLinks = function parseLinks(html) {
+  // First parse all links that have some text
+  html = html.replace(/<a(.+?)href="(.+?)"(.*?)>(.+?)<\/a>/gm, '$4 ($2)'); // Remove all those that doesn't
+
+  return html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.*?)<\/a>/gm, '');
 };
 
-var removeBlocks = function removeBlocks(html) {
+var parseImages = function parseImages(html) {
+  // Parse images where the alt property is before the src one
+  html = html.replace(/<img(.+?)alt="(.+?)"(.+?)src="(.+?)"(.*?)>/gm, 'Image: $2 ($4)'); // Parse images where the alt property is after the src one
+
+  html = html.replace(/<img(.+?)src="(.+?)"(.+?)alt="(.+?)"(.*?)>/gm, 'Image: $4 ($2)'); // Parse images where no alt property was provided
+
+  html = html.replace(/<img(.+?)src="(.+?)"(.*?)>/gm, 'Image: $2');
+  return html;
+};
+
+var breakOnBlocks = function breakOnBlocks(html) {
   var _iteratorNormalCompletion3 = true;
   var _didIteratorError3 = false;
   var _iteratorError3 = undefined;
@@ -2537,8 +2531,7 @@ var removeBlocks = function removeBlocks(html) {
   try {
     for (var _iterator3 = blocks[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
       var block = _step3.value;
-      html = html.replace(new RegExp("<".concat(block, "(.*?)>"), 'gm'), '');
-      html = html.replace(new RegExp("</".concat(block, "(.*?)>"), 'gm'), '');
+      html = html.replace(new RegExp("</".concat(block, ">"), 'gm'), "</".concat(block, ">\n"));
     }
   } catch (err) {
     _didIteratorError3 = true;
@@ -2551,6 +2544,39 @@ var removeBlocks = function removeBlocks(html) {
     } finally {
       if (_didIteratorError3) {
         throw _iteratorError3;
+      }
+    }
+  }
+
+  return html;
+};
+
+var removeExtraBreakLines = function removeExtraBreakLines(html) {
+  return html.replace(/(\n\n)+/gm, '\n');
+};
+
+var removeBlocks = function removeBlocks(html) {
+  var _iteratorNormalCompletion4 = true;
+  var _didIteratorError4 = false;
+  var _iteratorError4 = undefined;
+
+  try {
+    for (var _iterator4 = blocks[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+      var block = _step4.value;
+      html = html.replace(new RegExp("<".concat(block, "(.*?)>"), 'gm'), '');
+      html = html.replace(new RegExp("</".concat(block, "(.*?)>"), 'gm'), '');
+    }
+  } catch (err) {
+    _didIteratorError4 = true;
+    _iteratorError4 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion4 && _iterator4.return != null) {
+        _iterator4.return();
+      }
+    } finally {
+      if (_didIteratorError4) {
+        throw _iteratorError4;
       }
     }
   }
@@ -2578,6 +2604,8 @@ var replaceSensitiveCharacters = function replaceSensitiveCharacters(html) {
   html = html.replace(/&GT;/gm, '>');
   html = html.replace(/&lt;/gm, '<');
   html = html.replace(/&LT;/gm, '<');
+  html = html.replace(/&quot;/gm, '"');
+  html = html.replace(/&QUOT;/gm, '"');
   html = html.replace(/﻿/gm, '');
   return html;
 };

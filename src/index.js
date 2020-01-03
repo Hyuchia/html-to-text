@@ -50,6 +50,12 @@ const unparsable = [
   'canvas',
 ];
 
+const silent = [
+  'ol',
+  'ul',
+  'span'
+];
+
 const preprocess = html => {
   return html;
 };
@@ -66,14 +72,20 @@ const removeUnparsableElements = html => {
 };
 
 // Remove all the elements that don't really matter
-const removeSilentElements = html => html.replace(/<(\/)?(ul|ol|span)+(.*?)>/g, '');
+const removeSilentElements = html => {
+  for (const element of silent) {
+    html = html.replace(new RegExp(`<${element}(.*?)>(.*?)</${element}>`), '$2');
+  }
+  html = html.replace(/<(\/)?(ul|ol|span)+(.*?)>/g, '');
+  return html;
+};
 
 const parseLinks = html => {
   // First parse all links that have some text
-  html = html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.+?)<\/a>/g, '$4 ($2)');
+  html = html.replace(/<a(.+?)href="(.+?)"(.*?)>(.+?)<\/a>/gm, '$4 ($2)');
 
   // Remove all those that doesn't
-  return html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.*?)<\/a>/g, '');
+  return html.replace(/<a(.+?)href="(.+?)"(.+?)?>(.*?)<\/a>/gm, '');
 };
 
 const parseImages = html => {

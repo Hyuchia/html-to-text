@@ -30,3 +30,5 @@ release
 .conf
 .ftpconfig
 .sftpconfig
+cypress/videos/
+cypress/screenshots/
