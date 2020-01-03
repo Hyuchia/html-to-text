@@ -4,6 +4,11 @@ This library is based on: [Luke Scott's html-to-formatted-text](https://github.c
 
 A simple utility to convert HTML to nicely printed text, while trying to keep as much elements as possible.
 
+* Links are kept in the form `Link Text (Url)`
+* Images are kept in the form `Image: Alt Text (Url)`
+* List items are kept in the form `* Item Text`
+* All [HTML entities](https://dev.w3.org/html5/html-author/charref) are correctly parsed to their respective character
+
 ### Installation
 This library is provided as an UMD module that can be installed by adding the files manually to your project or via a package manager.
 
