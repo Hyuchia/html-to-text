@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="./../dist/html-to-text.js"></script>
+		<style>
+			section {
+				display: flex;
+			}
+
+			section > * {
+				flex: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Just random HTML taken from another project in Github:</p>
+		<section>
+			<div>
+				<article class="markdown-body entry-content p-5" itemprop="text"><p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/showdownjs/logo/master/dist/logo.readme.png"><img src="https://raw.githubusercontent.com/showdownjs/logo/master/dist/logo.readme.png" alt="Showdown" style="max-width:100%;"></a></p>
+					<p><a href="https://travis-ci.org/showdownjs/showdown" rel="nofollow"><img src="https://camo.githubusercontent.com/3140866d6be9e15c65ce924c78e33424b862956e/68747470733a2f2f7472617669732d63692e6f72672f73686f77646f776e6a732f73686f77646f776e2e7376673f6272616e63683d6d6173746572" alt="Build Status: Linux" data-canonical-src="https://travis-ci.org/showdownjs/showdown.svg?branch=master" style="max-width:100%;"></a>
+					<a href="https://ci.appveyor.com/project/tivie/showdown/branch/master" rel="nofollow"><img src="https://camo.githubusercontent.com/7068cca633c5afc0c2c1db30084da812f605fbca/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f73686f77646f776e6a732f73686f77646f776e3f6272616e63683d6d6173746572267376673d74727565" alt="Build Status: Windows" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/showdownjs/showdown?branch=master&amp;svg=true" style="max-width:100%;"></a>
+					<a href="http://badge.fury.io/js/showdown" rel="nofollow"><img src="https://camo.githubusercontent.com/eaee4a17117b52009fd5aef64ecd9da4fe25054d/68747470733a2f2f62616467652e667572792e696f2f6a732f73686f77646f776e2e737667" alt="npm version" data-canonical-src="https://badge.fury.io/js/showdown.svg" style="max-width:100%;"></a>
+					<a href="http://badge.fury.io/bo/showdown" rel="nofollow"><img src="https://camo.githubusercontent.com/604f2f9b4d8af53231bc87c108882ae58ca14492/68747470733a2f2f62616467652e667572792e696f2f626f2f73686f77646f776e2e737667" alt="Bower version" data-canonical-src="https://badge.fury.io/bo/showdown.svg" style="max-width:100%;"></a>
+					<a href="https://gitter.im/showdownjs/showdown?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" rel="nofollow"><img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/showdownjs/showdown" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"></a>
+					<a href="https://greenkeeper.io/" rel="nofollow"><img src="https://camo.githubusercontent.com/29d5e9d3e84f2101aeb5bb93e9b6f7af35728ca9/68747470733a2f2f6261646765732e677265656e6b65657065722e696f2f73686f77646f776e6a732f73686f77646f776e2e737667" alt="Greenkeeper badge" data-canonical-src="https://badges.greenkeeper.io/showdownjs/showdown.svg" style="max-width:100%;"></a>
+					<a href="https://www.paypal.me/tiviesantos" rel="nofollow"><img src="https://camo.githubusercontent.com/d5d24e33e2f4b6fe53987419a21b203c03789a8f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d50617950616c2d677265656e2e737667" alt="Donate" data-canonical-src="https://img.shields.io/badge/Donate-PayPal-green.svg" style="max-width:100%;"></a></p>
+					<hr>
+					<p>Showdown is a Javascript Markdown to HTML converter, based on the original works by John Gruber.
+					Showdown can be used client side (in the browser) or server side (with NodeJs).</p>
+					<h2><a id="user-content-live-demo" class="anchor" aria-hidden="true" href="#live-demo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Live DEMO</h2>
+					<p>Check a live Demo here <a href="http://demo.showdownjs.com/" rel="nofollow">http://demo.showdownjs.com/</a></p>
+					<h2><a id="" class="anchor" aria-hidden="true" href="#"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://www.patreon.com/bePatron?u=11141581" rel="nofollow"><img src="https://camo.githubusercontent.com/3d9b27bdf72d7e5407fbad6f9240f6cadc98a7a5/68747470733a2f2f63352e70617472656f6e2e636f6d2f65787465726e616c2f6c6f676f2f6265636f6d655f615f706174726f6e5f627574746f6e2e706e67" alt="Patreon" data-canonical-src="https://c5.patreon.com/external/logo/become_a_patron_button.png" style="max-width:100%;"></a></h2>
+					<p>As you know, ShowdownJS is a free library and it will remain free forever. However, maintaining and improving the library costs time and money.</p>
+					<p>If you like our work and find our library useful, please donate through <a href="https://www.patreon.com/showdownjs" rel="nofollow">patreon</a> or directly through <a href="https://www.paypal.me/tiviesantos" rel="nofollow">paypal</a>!! Your contribution will be greatly appreciated and help me continue to develop this awesome library.</p>
+					<h2><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
+					<p>ShowdownJS v 2.0 is release under the MIT version.
+					Previous versions are release under BSD.</p>
+					<h2><a id="user-content-who-uses-showdown-or-a-fork" class="anchor" aria-hidden="true" href="#who-uses-showdown-or-a-fork"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Who uses Showdown (or a fork)</h2>
+					<ul>
+					<li><a href="https://github.com/GoogleCloudPlatform">GoogleCloudPlatform</a></li>
+					<li><a href="https://www.meteor.com/" rel="nofollow">Meteor</a></li>
+					<li><a href="http://stackexchange.com/" rel="nofollow">Stackexchange</a> - forked as <a href="https://code.google.com/p/pagedown/" rel="nofollow">PageDown</a></li>
+					<li><a href="https://github.com/Vertafore/docular">docular</a></li>
+					<li><a href="https://github.com/oscarmorrison/md-page">md-page</a></li>
+					<li><a href="https://qcobjects.dev" rel="nofollow">QCObjects</a></li>
+					<li><a href="https://www.npmjs.com/browse/depended/showdown" rel="nofollow">and some others...</a></li>
+					</ul>
+					<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+					<h3><a id="user-content-download-tarball" class="anchor" aria-hidden="true" href="#download-tarball"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download tarball</h3>
+					<p>You can download the latest release tarball directly from <a href="https://github.com/showdownjs/showdown/releases">releases</a></p>
+					<h3><a id="user-content-bower" class="anchor" aria-hidden="true" href="#bower"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bower</h3>
+					<pre><code>bower install showdown
+					</code></pre>
+					<h3><a id="user-content-npm-server-side" class="anchor" aria-hidden="true" href="#npm-server-side"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>npm (server-side)</h3>
+					<pre><code>npm install showdown
+					</code></pre>
+					<h3><a id="user-content-nuget-package" class="anchor" aria-hidden="true" href="#nuget-package"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NuGet package</h3>
+					<pre><code>PM&gt; Install-Package showdownjs
+					</code></pre>
+					<p>The NuGet Packages can be <a href="https://www.nuget.org/packages/showdownjs/" rel="nofollow">found here</a>.</p>
+					<h3><a id="user-content-cdn" class="anchor" aria-hidden="true" href="#cdn"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CDN</h3>
+					<p>You can also use one of several CDNs available:</p>
+					<ul>
+					<li>
+					<p>jsDelivr</p>
+					<pre><code>  https://cdn.jsdelivr.net/npm/showdown@&lt;version tag&gt;/dist/showdown.min.js
+					</code></pre>
+					</li>
+					<li>
+					<p>cdnjs</p>
+					<pre><code>  https://cdnjs.cloudflare.com/ajax/libs/showdown/&lt;version tag&gt;/showdown.min.js
+					</code></pre>
+					</li>
+					<li>
+					<p>unpkg</p>
+					<pre><code>  https://unpkg.com/showdown/dist/showdown.min.js
+					</code></pre>
+					</li>
+					</ul>
+					<p><em>Note</em>: replace <code>&lt;version tag&gt;</code> with an actual full length version you're interested in e.g. <code>1.9.0</code></p>
+					<h2><a id="user-content-browser-compatibility" class="anchor" aria-hidden="true" href="#browser-compatibility"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browser Compatibility</h2>
+					<p>Showdown has been tested successfully with:</p>
+					<ul>
+					<li>Firefox 1.5 and 2.0</li>
+					<li>Chrome 12.0</li>
+					<li>Internet Explorer 6 and 7</li>
+					<li>Safari 2.0.4</li>
+					<li>Opera 8.54 and 9.10</li>
+					<li>Netscape 8.1.2</li>
+					<li>Konqueror 3.5.4</li>
+					</ul>
+					<p>In theory, Showdown will work in any browser that supports ECMA 262 3rd Edition (JavaScript 1.5).
+					The converter itself might even work in things that aren't web browsers, like Acrobat.  No promises.</p>
+					<h2><a id="user-content-node-compatibility" class="anchor" aria-hidden="true" href="#node-compatibility"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Node compatibility</h2>
+					<p>Showdown has been tested with node 0.8 and 0.10. However, it should work with previous versions, such as node 0.6.</p>
+					<h2><a id="user-content-legacy-version" class="anchor" aria-hidden="true" href="#legacy-version"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legacy version</h2>
+					<p>If you're looking for showdown v&lt;1.0.0, you can find it in the <a href="https://github.com/showdownjs/showdown/tree/legacy"><strong>legacy branch</strong></a>.</p>
+					<h2><a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Changelog</h2>
+					<p>You can check the full <a href="https://github.com/showdownjs/showdown/blob/master/CHANGELOG.md">changelog</a></p>
+					<h2><a id="user-content-extended-documentation" class="anchor" aria-hidden="true" href="#extended-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extended documentation</h2>
+					<p>Check our <a href="https://github.com/showdownjs/showdown/wiki">wiki pages</a> for examples and a more in-depth documentation.</p>
+					<h2><a id="user-content-quick-example" class="anchor" aria-hidden="true" href="#quick-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quick Example</h2>
+					<h3><a id="user-content-node" class="anchor" aria-hidden="true" href="#node"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Node</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> showdown  <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>showdown<span class="pl-pds">'</span></span>),
+						converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>(),
+						text      <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span># hello, markdown!<span class="pl-pds">'</span></span>,
+						html      <span class="pl-k">=</span> <span class="pl-smi">converter</span>.<span class="pl-en">makeHtml</span>(text);</pre></div>
+					<h3><a id="user-content-browser" class="anchor" aria-hidden="true" href="#browser"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browser</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>(),
+						text      <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span># hello, markdown!<span class="pl-pds">'</span></span>,
+						html      <span class="pl-k">=</span> <span class="pl-smi">converter</span>.<span class="pl-en">makeHtml</span>(text);</pre></div>
+					<h3><a id="user-content-output" class="anchor" aria-hidden="true" href="#output"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Output</h3>
+					<p>Both examples should output...</p>
+					<div class="highlight highlight-text-html-basic"><pre>    &lt;<span class="pl-ent">h1</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>hellomarkdown<span class="pl-pds">"</span></span>&gt;hello, markdown!&lt;/<span class="pl-ent">h1</span>&gt;</pre></div>
+					<h2><a id="user-content-options" class="anchor" aria-hidden="true" href="#options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h2>
+					<p>You can change some of showdown's default behavior through options.</p>
+					<h3><a id="user-content-setting-options" class="anchor" aria-hidden="true" href="#setting-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting options</h3>
+					<p>Options can be set:</p>
+					<h4><a id="user-content-globally" class="anchor" aria-hidden="true" href="#globally"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Globally</h4>
+					<p>Setting a "global" option affects all instances of showdown</p>
+					<div class="highlight highlight-source-js"><pre><span class="pl-smi">showdown</span>.<span class="pl-en">setOption</span>(<span class="pl-s"><span class="pl-pds">'</span>optionKey<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>);</pre></div>
+					<h4><a id="user-content-locally" class="anchor" aria-hidden="true" href="#locally"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Locally</h4>
+					<p>Setting a "local" option only affects the specified Converter object.
+					Local options can be set:</p>
+					<ul>
+					<li>
+					<p><strong>through the constructor</strong></p>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>({optionKey<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>});</pre></div>
+					</li>
+					<li>
+					<p><strong>through the setOption() method</strong></p>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>();
+					<span class="pl-smi">converter</span>.<span class="pl-en">setOption</span>(<span class="pl-s"><span class="pl-pds">'</span>optionKey<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>);</pre></div>
+					</li>
+					</ul>
+					<h3><a id="user-content-getting-an-option" class="anchor" aria-hidden="true" href="#getting-an-option"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting an option</h3>
+					<p>Showdown provides 2 methods (both local and global) to retrieve previous set options.</p>
+					<h4><a id="user-content-getoption" class="anchor" aria-hidden="true" href="#getoption"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>getOption()</h4>
+					<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> Global</span>
+					<span class="pl-k">var</span> myOption <span class="pl-k">=</span> <span class="pl-smi">showdown</span>.<span class="pl-en">getOption</span>(<span class="pl-s"><span class="pl-pds">'</span>optionKey<span class="pl-pds">'</span></span>);
+
+					<span class="pl-c"><span class="pl-c">//</span>Local</span>
+					<span class="pl-k">var</span> myOption <span class="pl-k">=</span> <span class="pl-smi">converter</span>.<span class="pl-en">getOption</span>(<span class="pl-s"><span class="pl-pds">'</span>optionKey<span class="pl-pds">'</span></span>);</pre></div>
+					<h4><a id="user-content-getoptions" class="anchor" aria-hidden="true" href="#getoptions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>getOptions()</h4>
+					<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> Global</span>
+					<span class="pl-k">var</span> showdownGlobalOptions <span class="pl-k">=</span> <span class="pl-smi">showdown</span>.<span class="pl-en">getOptions</span>();
+
+					<span class="pl-c"><span class="pl-c">//</span>Local</span>
+					<span class="pl-k">var</span> thisConverterSpecificOptions <span class="pl-k">=</span> <span class="pl-smi">converter</span>.<span class="pl-en">getOptions</span>();</pre></div>
+					<h3><a id="user-content-retrieve-the-default-options" class="anchor" aria-hidden="true" href="#retrieve-the-default-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Retrieve the default options</h3>
+					<p>You can get showdown's default options with:</p>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> defaultOptions <span class="pl-k">=</span> <span class="pl-smi">showdown</span>.<span class="pl-en">getDefaultOptions</span>();</pre></div>
+					<h3><a id="user-content-valid-options" class="anchor" aria-hidden="true" href="#valid-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Valid Options</h3>
+					<ul>
+					<li>
+					<p><strong>omitExtraWLInCodeBlocks</strong>: (boolean) [default false] Omit the trailing newline in a code block. Ex:</p>
+					<p>This:</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">code</span>&gt;&lt;<span class="pl-ent">pre</span>&gt;var foo = 'bar';
+					&lt;/<span class="pl-ent">pre</span>&gt;&lt;/<span class="pl-ent">code</span>&gt;</pre></div>
+					<p>Becomes this:</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">code</span>&gt;&lt;<span class="pl-ent">pre</span>&gt;var foo = 'bar';&lt;/<span class="pl-ent">pre</span>&gt;&lt;/<span class="pl-ent">code</span>&gt;</pre></div>
+					</li>
+					<li>
+					<p><strong>noHeaderId</strong>: (boolean) [default false] Disable the automatic generation of header ids.
+					Setting to true overrides <strong>prefixHeaderId</strong></p>
+					</li>
+					<li>
+					<p><strong>customizedHeaderId</strong>: (boolean) [default false] Use text in curly braces as header id. <strong>(since v1.7.0)</strong>
+					Example:</p>
+					<pre><code>## Sample header {real-id}     will use real-id as id
+					</code></pre>
+					</li>
+					<li>
+					<p><strong>ghCompatibleHeaderId</strong>: (boolean) [default false] Generate header ids compatible with github style
+					(spaces are replaced with dashes and a bunch of non alphanumeric chars are removed) <strong>(since v1.5.5)</strong></p>
+					</li>
+					<li>
+					<p><strong>prefixHeaderId</strong>: (string/boolean) [default false] Add a prefix to the generated header ids.
+					Passing a string will prefix that string to the header id. Setting to <code>true</code> will add a generic 'section' prefix.</p>
+					</li>
+					<li>
+					<p><strong>rawPrefixHeaderId</strong>: (boolean) [default false] Setting this option to true will prevent showdown from modifying the prefix.
+					This might result in malformed IDs (if, for instance, the " char is used in the prefix).
+					Has no effect if prefixHeaderId is set to false. <strong>(since v 1.7.3)</strong></p>
+					</li>
+					<li>
+					<p><strong>rawHeaderId</strong>: (boolean) [default false] Remove only spaces, ' and " from generated header ids (including prefixes),
+					replacing them with dashes (-). WARNING: This might result in malformed ids <strong>(since v1.7.3)</strong></p>
+					</li>
+					<li>
+					<p><strong>headerLevelStart</strong>: (integer) [default 1] Set the header starting level. For instance, setting this to 3 means that</p>
+					<div class="highlight highlight-source-lisp"><pre># foo</pre></div>
+					<p>will be parsed as</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">h3</span>&gt;foo&lt;/<span class="pl-ent">h3</span>&gt;</pre></div>
+					</li>
+					<li>
+					<p><strong>parseImgDimensions</strong>: (boolean) [default false] Enable support for setting image dimensions from within markdown syntax.
+					Examples:</p>
+					<pre><code>![foo](foo.jpg =100x80)     simple, assumes units are in px
+					![bar](bar.jpg =100x*)      sets the height to "auto"
+					![baz](baz.jpg =80%x5em)  Image with width of 80% and height of 5em
+					</code></pre>
+					</li>
+					<li>
+					<p><strong>simplifiedAutoLink</strong>: (boolean) [default false] Turning this option on will enable automatic linking to urls.
+					This means that:</p>
+					<div class="highlight highlight-source-lisp"><pre>some text www.google.com</pre></div>
+					<p>will be parsed as</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;some text &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>www.google.com<span class="pl-pds">"</span></span>&gt;www.google.com&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+					</li>
+					<li>
+					<p><del><strong>excludeTrailingPunctuationFromURLs</strong>: (boolean) [default false] This option excludes trailing punctuation from autolinking urls.
+					Punctuation excluded: <code>. !  ? ( )</code>. Only applies if <strong>simplifiedAutoLink</strong> option is set to <code>true</code>.</del></p>
+					</li>
+					<li>
+					<p><strong>literalMidWordUnderscores</strong>: (boolean) [default false] Turning this on will stop showdown from interpreting
+					underscores in the middle of words as <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> and instead treat them as literal underscores.</p>
+					<p>Example:</p>
+					<div class="highlight highlight-source-lisp"><pre>some text with__underscores__in middle</pre></div>
+					<p>will be parsed as</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;some text with__underscores__in middle&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+					</li>
+					<li>
+					<p><del><strong>literalMidWordAsterisks</strong>: (boolean) [default false] Turning this on will stop showdown from interpreting asterisks
+					in the middle of words as <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> and instead treat them as literal asterisks.</del></p>
+					</li>
+					<li>
+					<p><strong>strikethrough</strong>: (boolean) [default false] Enable support for strikethrough syntax.
+					<code>~~strikethrough~~</code> as <code>&lt;del&gt;strikethrough&lt;/del&gt;</code></p>
+					</li>
+					<li>
+					<p><strong>tables</strong>: (boolean) [default false] Enable support for tables syntax. Example:</p>
+					<div class="highlight highlight-source-lisp"><pre>| h1    |    h2   |      h3 |
+					|:------|:-------:|--------:|
+					| <span class="pl-c1">100</span>   | [a][<span class="pl-c1">1</span>]  | ![b][<span class="pl-c1">2</span>] |
+					| <span class="pl-smi">*foo*</span> | <span class="pl-smi">**bar**</span> | ~~baz~~ |</pre></div>
+					<p>See the wiki for more info</p>
+					</li>
+					<li>
+					<p><strong>tablesHeaderId</strong>: (boolean) [default false] If enabled adds an id property to table headers tags.</p>
+					</li>
+					<li>
+					<p><strong>ghCodeBlocks</strong>: (boolean) [default true] Enable support for GFM code block style.</p>
+					</li>
+					<li>
+					<p><strong>tasklists</strong>: (boolean) [default false] Enable support for GFM tasklists. Example:</p>
+					<div class="highlight highlight-source-lisp"><pre> - [x] This task is done
+					- [ ] This is still pending</pre></div>
+					</li>
+					<li>
+					<p><strong>smoothLivePreview</strong>: (boolean) [default false] Prevents weird effects in live previews due to incomplete input</p>
+					</li>
+					<li>
+					<p><strong>smartIndentationFix</strong>: (boolean) [default false] Tries to smartly fix indentation problems related to es6 template
+					strings in the midst of indented code.</p>
+					</li>
+					<li>
+					<p><strong>disableForced4SpacesIndentedSublists</strong>: (boolean) [default false] Disables the requirement of indenting sublists
+					by 4 spaces for them to be nested, effectively reverting to the old behavior where 2 or 3 spaces were enough.
+					<strong>(since v1.5.0)</strong></p>
+					</li>
+					<li>
+					<p><strong>simpleLineBreaks</strong>: (boolean) [default false] Parses line breaks as <code>&lt;br&gt;</code>, without
+					needing 2 spaces at the end of the line <strong>(since v1.5.1)</strong></p>
+					<div class="highlight highlight-source-lisp"><pre>a line
+					wrapped in two</pre></div>
+					<p>turns into:</p>
+					<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;a line&lt;<span class="pl-ent">br</span>&gt;
+					wrapped in two&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+					</li>
+					<li>
+					<p><strong>requireSpaceBeforeHeadingText</strong>: (boolean) [default false] Makes adding a space between <code>#</code> and the header text mandatory <strong>(since v1.5.3)</strong></p>
+					</li>
+					<li>
+					<p><strong>ghMentions</strong>: (boolean) [default false] Enables github @mentions, which link to the username mentioned <strong>(since v1.6.0)</strong></p>
+					</li>
+					<li>
+					<p><strong>ghMentionsLink</strong>: (string) [default <code>https://github.com/{u}</code>] Changes the link generated by @mentions.
+					Showdown will replace <code>{u}</code> with the username. Only applies if ghMentions option is enabled.
+					Example: <code>@tivie</code> with ghMentionsOption set to <code>//mysite.com/{u}/profile</code> will result in <code>&lt;a href="//mysite.com/tivie/profile"&gt;@tivie&lt;/a&gt;</code></p>
+					</li>
+					<li>
+					<p><strong>encodeEmails</strong>: (boolean) [default true] Enable e-mail addresses encoding through the use of Character Entities, transforming ASCII e-mail addresses into its equivalent decimal entities. (since v1.6.1)</p>
+					<p>NOTE: Prior to version 1.6.1, emails would always be obfuscated through dec and hex encoding.</p>
+					</li>
+					<li>
+					<p><strong>openLinksInNewWindow</strong>: (boolean) [default false] Open all links in new windows
+					(by adding the attribute <code>target="_blank"</code> to <code>&lt;a&gt;</code> tags) <strong>(since v1.7.0)</strong></p>
+					</li>
+					<li>
+					<p><strong>backslashEscapesHTMLTags</strong>: (boolean) [default false] Support for HTML Tag escaping. ex: <code>\&lt;div&gt;foo\&lt;/div&gt;</code> <strong>(since v1.7.2)</strong></p>
+					</li>
+					<li>
+					<p><strong>emoji</strong>: (boolean) [default false] Enable emoji support. Ex: <code>this is a :smile: emoji</code>
+					For more info on available emojis, see <a href="https://github.com/showdownjs/showdown/wiki/Emojis">https://github.com/showdownjs/showdown/wiki/Emojis</a> <strong>(since v.1.8.0)</strong></p>
+					</li>
+					<li>
+					<p><strong>underline</strong>: (boolean) [default false] <em><strong>EXPERIMENTAL FEATURE</strong></em> Enable support for underline.
+					Syntax is <strong>double</strong> or <strong>triple</strong> <strong>underscores</strong> ex: <code>__underlined word__</code>. With this option enabled, underscores are no longer parses into <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code>.</p>
+					</li>
+					<li>
+					<p><strong>completeHTMLDocument</strong>: (boolean) [default false] Outputs a complete html document,
+					including <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags' instead of an HTML fragment. (since v.1.8.5)</p>
+					</li>
+					<li>
+					<p><strong>metadata</strong>: (boolean) [default false] Enable support for document metadata (defined at the top of the document
+					between <code>«««</code> and <code>»»»</code> or between <code>---</code> and <code>---</code>).  (since v.1.8.5)</p>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> conv <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>({metadata<span class="pl-k">:</span> <span class="pl-c1">true</span>});
+					<span class="pl-k">var</span> html <span class="pl-k">=</span> <span class="pl-smi">conv</span>.<span class="pl-en">makeHtml</span>(someMd);
+					<span class="pl-k">var</span> metadata <span class="pl-k">=</span> <span class="pl-smi">conv</span>.<span class="pl-en">getMetadata</span>(); <span class="pl-c"><span class="pl-c">//</span> returns an object with the document metadata</span></pre></div>
+					</li>
+					<li>
+					<p><strong>splitAdjacentBlockquotes</strong>: (boolean) [default false] Split adjacent blockquote blocks.(since v.1.8.6)</p>
+					</li>
+					</ul>
+					<p><strong>NOTE</strong>: Please note that until <strong>version 1.6.0</strong>, all of these options are <em><strong>DISABLED</strong></em> by default in the cli tool.</p>
+					<h2><a id="user-content-flavors" class="anchor" aria-hidden="true" href="#flavors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flavors</h2>
+					<p>You can also use flavors or presets to set the correct options automatically, so that showdown behaves like popular markdown flavors.</p>
+					<p>Currently, the following flavors are available:</p>
+					<ul>
+					<li>original - original markdown flavor as in <a href="https://daringfireball.net/projects/markdown/" rel="nofollow">John Gruber's spec</a></li>
+					<li>vanilla  - showdown base flavor (as from v1.3.1)</li>
+					<li>github   - GFM (GitHub Flavored Markdown)</li>
+					</ul>
+					<h3><a id="user-content-global" class="anchor" aria-hidden="true" href="#global"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-smi">showdown</span>.<span class="pl-en">setFlavor</span>(<span class="pl-s"><span class="pl-pds">'</span>github<span class="pl-pds">'</span></span>);</pre></div>
+					<h3><a id="user-content-instance" class="anchor" aria-hidden="true" href="#instance"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instance</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-smi">converter</span>.<span class="pl-en">setFlavor</span>(<span class="pl-s"><span class="pl-pds">'</span>github<span class="pl-pds">'</span></span>);</pre></div>
+					<h2><a id="user-content-cli-tool" class="anchor" aria-hidden="true" href="#cli-tool"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CLI Tool</h2>
+					<p>Showdown also comes bundled with a Command Line Interface tool. You can check the <a href="https://github.com/showdownjs/showdown/wiki/CLI-tool">CLI wiki page</a> for more info</p>
+					<h2><a id="user-content-integration-with-angularjs" class="anchor" aria-hidden="true" href="#integration-with-angularjs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration with AngularJS</h2>
+					<p>ShowdownJS project also provides seamlessly integration with AngularJS via a "plugin".
+					Please visit <a href="https://github.com/showdownjs/ngShowdown">https://github.com/showdownjs/ngShowdown</a> for more information.</p>
+					<h2><a id="user-content-integration-with-typescript" class="anchor" aria-hidden="true" href="#integration-with-typescript"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration with TypeScript</h2>
+					<p>If you're using TypeScript you maybe want to use the types from <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/showdown">DefinitelyTyped</a></p>
+					<h2><a id="user-content-integration-with-systemjsjspm" class="anchor" aria-hidden="true" href="#integration-with-systemjsjspm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration with SystemJS/JSPM</h2>
+					<p>Integration with SystemJS can be obtained via the third party <a href="https://github.com/guybedford/system-md">"system-md" plugin</a>.</p>
+					<h2><a id="user-content-integration-with-vuejs" class="anchor" aria-hidden="true" href="#integration-with-vuejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration with VueJS</h2>
+					<p>To use ShowdownJS as a Vue component quickly, you can check <a href="https://vue-showdown.js.org/" rel="nofollow">vue-showdown</a>.</p>
+					<h2><a id="user-content-xss-vulnerability" class="anchor" aria-hidden="true" href="#xss-vulnerability"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XSS vulnerability</h2>
+					<p>Showdown doesn't sanitize the input. This is by design since markdown relies on it to allow certain features to be correctly parsed into HTML.
+					This, however, means XSS injection is quite possible.</p>
+					<p>Please refer to the wiki article <a href="https://github.com/showdownjs/showdown/wiki/Markdown's-XSS-Vulnerability-(and-how-to-mitigate-it)">Markdown's XSS Vulnerability (and how to mitigate it)</a>
+					for more information.</p>
+					<h2><a id="user-content-extensions" class="anchor" aria-hidden="true" href="#extensions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extensions</h2>
+					<p>Showdown allows additional functionality to be loaded via extensions. (you can find a list of known showdown extensions <a href="https://github.com/showdownjs/showdown/wiki/extensions">here</a>)
+					You can also find a boilerplate, to create your own extensions in <a href="https://github.com/showdownjs/extension-boilerplate">this repository</a></p>
+					<h3><a id="user-content-client-side-extension-usage" class="anchor" aria-hidden="true" href="#client-side-extension-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client-side Extension Usage</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>showdown.js<span class="pl-pds">"</span></span> <span class="pl-k">/</span><span class="pl-k">&gt;</span>
+					<span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>twitter-extension.js<span class="pl-pds">"</span></span> <span class="pl-k">/</span><span class="pl-k">&gt;</span>
+
+					<span class="pl-k">var</span> converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>({ extensions<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>twitter<span class="pl-pds">'</span></span>] });</pre></div>
+					<h3><a id="user-content-server-side-extension-usage" class="anchor" aria-hidden="true" href="#server-side-extension-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Server-side Extension Usage</h3>
+					<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> showdown    <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>showdown<span class="pl-pds">'</span></span>),
+						myExtension <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>myExtension<span class="pl-pds">'</span></span>),
+						converter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">showdown.Converter</span>({ extensions<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>myExtension<span class="pl-pds">'</span></span>] });</pre></div>
+					<h2><a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tests</h2>
+					<p>A suite of tests is available which require node.js.  Once node is installed, run the following command from
+					the project root to install the dependencies:</p>
+					<pre><code>npm install
+					</code></pre>
+					<p>Once installed the tests can be run from the project root using:</p>
+					<pre><code>npm test
+					</code></pre>
+					<p>New test cases can easily be added.  Create a markdown file (ending in <code>.md</code>) which contains the markdown to test.
+					Create a <code>.html</code> file of the exact same name.  It will automatically be tested when the tests are executed with <code>mocha</code>.</p>
+					<h2><a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contributing</h2>
+					<p>If you wish to contribute please read the following quick guide.</p>
+					<h3><a id="user-content-want-a-feature" class="anchor" aria-hidden="true" href="#want-a-feature"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Want a Feature?</h3>
+					<p>You can request a new feature by submitting an issue. If you would like to implement a new feature feel free to issue a
+					Pull Request.</p>
+					<h3><a id="user-content-pull-requests-prs" class="anchor" aria-hidden="true" href="#pull-requests-prs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pull requests (PRs)</h3>
+					<p>PRs are awesome. However, before you submit your pull request consider the following guidelines:</p>
+					<ul>
+					<li>
+					<p>Search GitHub for an open or closed Pull Request that relates to your submission. You don't want to duplicate effort.</p>
+					</li>
+					<li>
+					<p>When issuing PRs that change code, make your changes in a new git branch based on master:</p>
+					<div class="highlight highlight-source-shell"><pre>git checkout -b my-fix-branch master</pre></div>
+					</li>
+					<li>
+					<p>Documentation (i.e: README.md) changes can be made directly against master.</p>
+					</li>
+					<li>
+					<p>Run the full test suite before submitting and make sure all tests pass (obviously =P).</p>
+					</li>
+					<li>
+					<p>Try to follow our <a href="https://github.com/showdownjs/code-style/blob/master/README.md"><strong>coding style rules</strong></a>.
+					Breaking them prevents the PR to pass the tests.</p>
+					</li>
+					<li>
+					<p>Refrain from fixing multiple issues in the same pull request. It's preferable to open multiple small PRs instead of one
+					hard to review big one.</p>
+					</li>
+					<li>
+					<p>If the PR introduces a new feature or fixes an issue, please add the appropriate test case.</p>
+					</li>
+					<li>
+					<p>We use commit notes to generate the changelog. It's extremely helpful if your commit messages adhere to the
+					<a href="https://github.com/showdownjs/code-style/blob/master/README.md#commit-message-convention"><strong>AngularJS Git Commit Guidelines</strong></a>.</p>
+					</li>
+					<li>
+					<p>If we suggest changes then:</p>
+					<ul>
+					<li>Make the required updates.</li>
+					<li>Re-run the Angular test suite to ensure tests are still passing.</li>
+					<li>Rebase your branch and force push to your GitHub repository (this will update your Pull Request):</li>
+					</ul>
+					<div class="highlight highlight-source-shell"><pre>git rebase master -i
+					git push origin my-fix-branch -f</pre></div>
+					</li>
+					<li>
+					<p>After your pull request is merged, you can safely delete your branch.</p>
+					</li>
+					</ul>
+					<p>If you have time to contribute to this project, we feel obliged that you get credit for it.
+					These rules enable us to review your PR faster and will give you appropriate credit in your GitHub profile.
+					We thank you in advance for your contribution!</p>
+					<h3><a id="user-content-joining-the-team" class="anchor" aria-hidden="true" href="#joining-the-team"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Joining the team</h3>
+					<p>We're looking for members to help maintaining Showdown.
+					Please see <a href="https://github.com/showdownjs/showdown/issues/114">this issue</a> to express interest or comment on this note.</p>
+					<h2><a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Credits</h2>
+					<p>Full credit list at <a href="https://github.com/showdownjs/showdown/blob/master/CREDITS.md">https://github.com/showdownjs/showdown/blob/master/CREDITS.md</a></p>
+					<p>Showdown is powered by:<br>
+					<a href="https://www.jetbrains.com/webstorm/" rel="nofollow"><img src="https://camo.githubusercontent.com/58fa42fb4aba5716bc427a3f0a13d7a572cd4db4/68747470733a2f2f7777772e6a6574627261696e732e636f6d2f77656273746f726d2f646f63756d656e746174696f6e2f646f63732f6c6f676f5f77656273746f726d2e706e67" alt="webstorm" data-canonical-src="https://www.jetbrains.com/webstorm/documentation/docs/logo_webstorm.png" style="max-width:100%;"></a></p>
+					</article>
+			</div>
+			<textarea></textarea>
+		</section>
+
+		<script>
+			document.querySelector('textarea').value = HTMLToText.default(document.querySelector('div').innerHTML);
+		</script>
+	</body>
+</html>
