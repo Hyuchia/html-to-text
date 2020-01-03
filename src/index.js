@@ -128,6 +128,9 @@ const replaceSensitiveCharacters = html => {
   html = html.replace(/&lt;/gm, '<');
   html = html.replace(/&LT;/gm, '<');
 
+  html = html.replace(/&quot;/gm, '"');
+  html = html.replace(/&QUOT;/gm, '"');
+
   html = html.replace(/﻿/gm, '');
 
   return html;
