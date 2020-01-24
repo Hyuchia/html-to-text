@@ -1,4 +1,4 @@
-import htmlToText from '../../dist/html-to-text';
+import htmlToText from '../../dist/html-to-text.min.js';
 
 describe('Single elements are transformed correctly', function() {
   it('Converts links', function() {
